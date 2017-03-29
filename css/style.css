@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', sans-serif;
+  overflow-x: hidden;
+}
+
+.headerFont {
+  padding: 20px 0;
+  opacity: .8;
+  text-align: center;
+  color: rgb(248,248,255);
+  letter-spacing: 10px;
+}
+
+
+.info {
+	background: url('../img/almostme.jpg') center center no-repeat;
+	background-size: cover;
+}
+.skills{
+	background: url('../img/workingppl.jpg') center center no-repeat;
+	background-size: cover;
+}
+.contact{
+	background: url('../img/telephone.jpg') center center no-repeat;
+	background-size: cover;
+}
+.learn{
+	background: url('../img/lookingfuture.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.projects {
+	text-align:center;
+	flex-wrap:wrap;
+	padding: 5%;
+	display: flex;
+	justify-content: space-around;
+	background: url('../img/desk.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.projects p {
+	color: white;
+	width: 100%;
+	font-size: 70px;
+	margin: 20px;
+}
+
+.projects a {
+	box-shadow: 7px 9px 4px 0px rgba(0,0,0,0.44);
+	margin: 25px 10px 25px 10px;
+	width: 35%;
+	height: 25vh;
+}
+
+.projects a:hover {
+	cursor: pointer;
+}
+
+.project1{
+	background: url('../img/firstPage.png') center center no-repeat;
+	background-size: cover;
+}
+
+.project2{
+	background: url('../img/secondPage.png') center center no-repeat;
+	background-size: cover;
+}
+
+.project3{
+	background: url('../img/thirdPage.png') center center no-repeat;
+	background-size: cover;
+}
+
+.modal {
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: .9;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.modal-structure {
+	height: 600px;
+	width: 800px;
+	background: white;
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	text-align: center;
+}
+
+.modal-structure p {
+	padding: 15px 100px;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.modal-structure i {
+	font-size: 70px;
+}
+
+.modal-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+#modal-learn i {
+	width: 50%;
+	font-size: 140px;
+}
+
+#modal-learn h4 {
+	width: 100%;
+}
+
+.modal-button {
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+	top: 0;
+	left: 2%;
+	position: absolute;
+}
+
+.modal-button:hover {
+	cursor: pointer;
+}
+
+.contactData {
+	width:260px; 
+    margin:0 auto; 
+    background-color:#fff; 
+    border:2px solid #ccc; 
+    border-radius:10px; 
+	padding:20px; 
+    margin-top:20px;
+}
+
+.contactData label {
+	display: block;
+	margin-bottom:5px;
+    font-weight:bold; 
+    font-size:20px; 
+    color:#555555;
+}
+
+.contactData textarea,
+.contactData input {
+	padding:5px; 
+	border-radius:3px; 
+	border:1px solid #ccc; 
+	margin-bottom:25px;
+	width:245px;
+}
+
+.contactData p {
+	font-size: 10px;
+	padding: 0;
+}
+
+header {
+  height: 100vh;
+  background: url('../img/hipstermountain.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+header div {
+  padding-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header a {
+	margin-top: 40px;
+	font-size: 20px;
+	opacity: .7;
+	color: white;
+	padding: 10px 30px 10px 37px;
+	text-decoration: none;
+	background: grey;
+	border-radius: 25px;
+	letter-spacing: 10px;
+	text-align: center;
+	transition: .5s ease-in-out;
+}
+
+header a:hover {
+	background: white;
+	color: grey;
+	letter-spacing: 15px;
+}
+
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+	width: 100%;
+	color: white;
+	font-size: 50px;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	padding-top: 120px;
+	transition: 1s;
+}
+
+h4 {
+	font-size: 40px;
+	padding: 15px;
+}
+
+main {
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/9a/8a/81/9a8a81e4eb03cc891b1b8c9e94207c1b.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main a {
+	display: flex;
+	text-align: center;
+	width: 50%;
+	height: 50vh;
+	text-decoration: none;
+}
+
+main a:hover h3 {
+	letter-spacing: 8px;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	word-spacing: 10px;
+	justify-content: space-around;
+	letter-spacing: 5px;
+	padding: 15px;
+	background: rgb(128,128,128);
+	text-align: center;
+}
+	
+
+@media screen and (max-width: 760px) {
+	
+	main {
+	display: flex;
+}
+	
+	main a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 50vh;
+	transition: 1s;
+	text-decoration: none;
+}
+
+	h3 {
+	font-size: 40px;
+}
+
+    .projects p {
+	width: 100%;
+	font-size: 40px;
+	margin: 20px;
+}
+
+   .headerContainer {
+	   margin-top: 100px;
+   }
+   
+   
+}
+
+@media screen and (max-width: 1100px){
+	
+	.modal-structure {
+	height: 90%;
+	width: 80%;
+	background: white;
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	text-align: center;
+}
+
+.modal-structure p {
+	padding: 15px 20px;
+	font-size:15px;
+	line-height: 27px;
+}
+
+.modal-structure i {
+	font-size: 50px;
+}
+
+.modal-structure h4 {
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+.modal-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#modal-learn i {
+	width: 100%;
+	padding: 20px;
+	font-size: 100px;
+}
+
+.contactData {
+	width:50%; 
+    margin:0 auto; 
+    background-color:#fff; 
+    border:2px solid #ccc; 
+    border-radius:10px; 
+	padding:20px; 
+    margin-top:20px;
+}
+
+.contactData textarea,
+.contactData input {
+	padding:5px; 
+	border-radius:3px; 
+	border:1px solid #ccc; 
+	margin-bottom:25px;
+	width:50%;
+}
+
+}
+
+@media screen and (max-height: 550px) {
+	
+	h3 {
+	width: 100%;
+	color: white;
+	font-size: 40px;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	padding-top: 70px;
+}
+
+    .headerContainer {
+	   margin-top: 0;
+ }
+ 
+    h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+}
+	
+}
+
+
+
+
+
