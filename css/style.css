@@ -127,6 +127,7 @@
 }
 
 .modal-button {
+	position: fixed;
 	color: black;
 	text-decoration: none;
 	padding: 10px;
